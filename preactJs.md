@@ -1,4 +1,3 @@
-* npm i -g preact-cli 
-* $ npx preact-cli create typescript reachUI 
-* 2
-* 3
+1. npm i -g preact-cli 
+2. $ npx preact-cli create typescript reachUI 
+
