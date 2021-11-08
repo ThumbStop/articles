@@ -1,4 +1,4 @@
-# articles
+# Articles
 Mdx Arcticles for ThumbStop publishing
 
 <h1> Pending Arcticle Assignment</h1>
