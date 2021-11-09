@@ -43,6 +43,7 @@
        preact build --analyze 
         notice apollo client size large
         need to reduc this using alias and direct imports; forgety that switch to graphl-ql or graphql-request > this reduced from 600k to 200k
+        https://github.com/nearform/graphql-hooks#useMutation
         
     Theme it up
     https://bareynol.github.io/mui-theme-creator/#Buttons
