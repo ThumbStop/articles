@@ -1,0 +1,4 @@
+pip pyinstaller
+create 32 bit and 64 git environments
+create spec files
+run pyinstaller appspec_dir32bit.spec
