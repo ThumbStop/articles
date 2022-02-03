@@ -1,4 +1,9 @@
-pip pyinstaller
+Install Desired Version in venv = you could also use pipenv 
+C:\Users\donald.osgood\AppData\Local\Programs\Python\Python39-32\python.exe -m venv env_32bit_39
+
+pip freeze > requirements.txt
+pip install pyinstaller==4.8
+pip install pywin32-ctypes
 create 32 bit and 64 git environments
 create spec files
 run pyinstaller appspec_dir32bit.spec
