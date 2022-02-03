@@ -1,5 +1,5 @@
 Install Desired Version in venv = you could also use pipenv 
-C:\Users\donald.osgood\AppData\Local\Programs\Python\Python39-32\python.exe -m venv env_32bit_39
+C:\Users\donald.osgood\AppData\Local\Programs\Python\Python39-32\python.exe -m venv .venv_32bit_39
 
 pip freeze > requirements.txt
 pip install pyinstaller==4.8
