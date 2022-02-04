@@ -5,6 +5,41 @@ pip freeze > requirements.txt
 pip install pyinstaller==4.8
 pip install pywin32-ctypes
 create 32 bit and 64 git environments
+
 create spec files
+
 run pyinstaller appspec_dir32bit.spec
+
+
 download and install innosetup 
+
+
+Create Hooks and add to pyinstaller hook folder to handle hydra and unvicorn:
+from PyInstaller.utils.hooks import collect_data_files,collect_submodules
+
+# "hydra._internal.core_plugins"
+# "hydra.plugins"
+# 'hydra._internal.core_plugins','hydra.grammar.gen.OverrideParser'
+
+datas = collect_data_files('hydra')
+hiddenimports = collect_submodules('hydra')
+
+from PyInstaller.utils.hooks import collect_submodules,collect_data_files
+
+# "hydra._internal.core_plugins"
+# "uvicorn"
+# 'uvicorn.loops',
+#     'uvicorn.loops.auto',
+#     'uvicorn.protocols',
+#     'uvicorn.protocols.http',
+#     'uvicorn.protocols.http.auto',
+#     'uvicorn.protocols.websockets',
+#     'uvicorn.protocols.websockets.auto',
+#     'uvicorn.lifespan',
+#     'uvicorn.lifespan.on'
+
+datas = collect_data_files('uvicorn')
+hiddenimports = collect_submodules('uvicorn')
+
+ref#
+https://stackoverflow.com/questions/59160020/pyinstaller-include-programmatically-imported-modules
